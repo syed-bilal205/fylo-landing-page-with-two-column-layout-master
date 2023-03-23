@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap");
+:root {
+  --VeryDarkBlue: hsl(243, 87%, 12%);
+  --lightBlue: hsl(238, 22%, 44%);
+  --BrightBlue: hsl(224, 93%, 58%);
+  --ModerateCyan: hsl(170, 45%, 43%);
+  --LightGrayishBlue: hsl(240, 75%, 98%);
+  --lightgray: hsl(0, 0%, 75%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 14px;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+section {
+  padding: 2rem 8rem;
+  margin: auto;
+}
+.header {
+  width: 100%;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.logo {
+  width: 10rem;
+  height: auto;
+}
+.logo img {
+  width: 100%;
+}
+.navbarLinks {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  list-style: none;
+  font-size: 1rem;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 4rem 0rem;
+  justify-content: space-between;
+}
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+}
+.heroContent h2 {
+  font-size: 2.5rem;
+}
+.heroContent p {
+  letter-spacing: 0.9px;
+  line-height: 20px;
+  font-weight: 500;
+}
+.heroButtons {
+  display: flex;
+  gap: 1rem;
+}
+.heroButtons input {
+  padding: 0.7rem 4rem;
+  outline: none;
+  border: 1px solid var(--lightgray);
+  border-radius: 5px;
+}
+.btn {
+  padding: 0.8rem 3rem;
+  border: none;
+  outline: none;
+  background-color: var(--BrightBlue);
+  color: var(--LightGrayishBlue);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.btn:hover {
+  background-color: hsl(224, 91%, 70%);
+}
+.heroImage img {
+  width: 100%;
+}
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  background-image: url(./images/bg-curve-desktop.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  padding: 4rem 8rem;
+}
+.bannerImage img {
+  width: 100%;
+}
+.bannerContent {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.bannerContent h2 {
+  font-size: 2.2rem;
+}
+.bannerContent p {
+  /* width: 35vw; */
+  font-weight: 500;
+  line-height: 20px;
+}
+.bannerContent .bannerLink {
+  display: flex;
+}
+.bannerContent .bannerLink a {
+  border-bottom: 1px solid var(--ModerateCyan);
+  color: var(--ModerateCyan);
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  font-size: 1rem;
+}
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  width: 24rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.testimonial .quotes {
+  width: 1rem;
+  margin-bottom: -20px;
+}
+.testimonial p {
+  /* width: 22vw; */
+  line-height: 25px;
+  font-weight: 500;
+}
+.textimonialImage img {
+  border-radius: 50%;
+  width: 3vw;
+}
+.textimonialImage {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.testimonialName {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.testimonialName h6 {
+  font-weight: 700;
+}
+.testimonialName span {
+  font-size: 0.6rem;
+}
+.newsletter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem 8rem;
+  background-color: var(--lightBlue);
+}
+.newsletterContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.newsletterContent h2 {
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.newsletterContent p {
+  color: var(--lightgray);
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+}
+.newsletterButton {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 0.5rem;
+}
+.newsletterButton input {
+  padding: 0.8rem 8rem;
+  height: 2.5rem;
+  outline: none;
+  border: 1px solid var(--lightgray);
+  border-radius: 5px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.newsletterButton .button {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+footer {
+  background-color: var(--VeryDarkBlue);
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 8rem;
+}
+.footerLogo {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.footerLogo p {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.footerLinks {
+  list-style: none;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: flex-end;
+}
+.footerIcons {
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: 1rem;
+  font-size: 1.5rem;
+}
+.socialIcon {
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+.author {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--VeryDarkBlue);
+  color: white;
+}
+/* ===========Media Quries================================ */
+@media (max-width: 948px) {
+  section {
+    padding: 2rem 2rem;
+  }
+  .hero {
+    flex-direction: column-reverse;
+  }
+  .heroContent {
+    text-align: center;
+  }
+  .heroContent h2 {
+    text-align: center;
+  }
+  .heroButtons {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .heroButtons .btn {
+    padding: 0.9rem 7.5rem;
+  }
+  .banner {
+    flex-direction: column-reverse;
+    padding: 2rem 2rem;
+  }
+  .bannerContent h2 {
+    text-align: center;
+  }
+  .bannerContent .bannerLink {
+    align-items: center;
+    justify-content: center;
+  }
+  .testimonial {
+    margin: auto;
+  }
+  .newsletter {
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 2rem;
+  }
+  .newsletterButton {
+    align-items: center;
+  }
+  .newsletterButton .button {
+    width: 50vw;
+  }
+  .newsletterButton input {
+    padding: 0.8rem 6rem;
+  }
+  footer {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+    padding: 4rem 2rem;
+  }
+  .footerIcons {
+    justify-content: center;
+    width: 100%;
+  }
+  .footerLinks {
+    align-items: flex-start;
+  }
+}
+@media (max-width: 412px) {
+  section {
+    padding: 2rem 1rem;
+  }
+  .navbarLinks {
+    font-size: 0.8rem;
+    gap: 1rem;
+  }
+}
